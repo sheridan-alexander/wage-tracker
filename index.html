@@ -6,16 +6,18 @@
 </head>
 <body>
 
-<h1>Wage Tracker</h1>
+<h1>Live Wage Tracker</h1>
 
-<label>Hourly Rate:</label>
+<label>Hourly Rate ($):</label>
 <input type="number" id="rate" placeholder="Enter hourly rate">
 
-<label>Hours Worked:</label>
-<input type="number" id="hours" placeholder="Enter hours worked">
+<label>Start Time:</label>
+<input type="datetime-local" id="startTime">
 
-<button onclick="calculateWage()">Calculate</button>
+<button onclick="calculateElapsed()">Calculate Earnings</button>
 
+<h2 id="timeElapsed"></h2>
+<h2 id="hoursWorked"></h2>
 <h2 id="result"></h2>
 
 <script src="script.js"></script>
